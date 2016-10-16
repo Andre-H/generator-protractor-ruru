@@ -9,13 +9,13 @@ var waitPlugin = require('../../src/js/wait-plugin.js');
 const targetDir = 'target';
 
 var xmlReporter = new jSonXMLReporter({
-	title : 'Protractor End to End Test Results',
+	title : 'Protractor End to End Test Results: <%=appName%>',
 	xmlReportDestPath : './' + targetDir + '/protractor-e2e-report.xml'
 });
 
 var htmlReporter = new HTMLScreenshotReporter({
 	savePath : 'screenshots/',
-	title : 'Protractor End to End Test Results',
+	title : 'Protractor End to End Test Results: <%=appName%>',
 	htmlReportDestPath : './' + targetDir + '/protractor-e2e-report.html'
 });
 
@@ -44,11 +44,6 @@ exports.config = {
 		}
 	],
 
-	//For standalone Protractor execution
-	seleniumServerJar : '../../node_modules/protractor/selenium/selenium-server-standalone-2.40.0.jar',
-	seleniumPort : null,
-	chromeDriver : '../../node_modules/protractor/selenium/chromedriver',
-
 	/*
 	* If seleniumAddress is set, seleniumServerJar, seleniumPort and chromeDriver settings will be ignored
 	* and tests will be ran in an already running instance of Selenium server, such as our internal Grid.
@@ -64,7 +59,7 @@ exports.config = {
 	* If passed by command line it will override the setting in this file.
 	* Otherwise defaults to the IP of the machine that is running Protractor.
 	*/
-	baseUrl : 'http://' + getIpAddress() + ':8080/',
+	baseUrl : '<%=baseUrl%>',
 
 	/*
 	* For multiCapabilities (testing in parallel with multiple browsers, use this

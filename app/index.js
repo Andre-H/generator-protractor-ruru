@@ -7,7 +7,7 @@ module.exports = generators.Base.extend({
     prompting: function () {
         return this.prompt([{
             type    : 'input',
-            name    : 'name',
+            name    : 'appName',
             message : 'Your project name',
             default : this.appname // Default to current folder name
         }, {
@@ -16,9 +16,9 @@ module.exports = generators.Base.extend({
             message: 'Choose the base URL for the Application Under Test',
             default: 'http://localhost:3000'
         }]).then(function (answers) {
-            this.appName = answers.name;
+            this.appName = answers.appName;
             this.baseUrl = answers.baseUrl;
-            this.log('app name', answers.name);
+            this.log('app name', answers.appName);
             this.log('baseUrl', answers.baseUrl);
         }.bind(this));
     },
