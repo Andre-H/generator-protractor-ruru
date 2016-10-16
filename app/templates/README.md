@@ -27,7 +27,7 @@ npm install -g grunt-cli
 ```
 
 
-##From here on
+##Usage 
 
 If installation completed successfully, give it a try by running example tests using just:
 
