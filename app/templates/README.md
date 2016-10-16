@@ -27,12 +27,16 @@ npm install -g grunt-cli
 ```
 
 
-##Usage 
+##Usage
 
-If installation completed successfully, give it a try by running example tests using just:
-
+If installation completed successfully, give it a try by running all example tests using just:
 ```
 $ grunt
+```
+
+Optionally, pass parameter like in the example:
+```
+$ grunt --baseUrl http://www.angularjs.org --suite myTestSuite --seleniumAddress http://199.99.99.100:4444/wd/hub
 ```
 
 Create test specs in tests/e2e/specs
@@ -40,12 +44,3 @@ Create test specs in tests/e2e/specs
 Create page objects in tests/e2e/pageobjects
 
 And test away.
-
-
-###Parameterized execution
-
-We are using grunt-protractor-runner so if you want, you will be able to run tests passing parameters by the command line such as:
-
-```
-$ grunt --baseUrl http://www.angularjs.org --suite myTestSuite --seleniumAddress http://199.99.99.100:4444/wd/hub
-```

@@ -75,7 +75,7 @@ exports.config = {
 		maxInstances : 2,
 		shardTestFiles : true,
 		chromeOptions: {
-			args: ['--no-sandbox']
+			args: ['--no-sandbox', '--disable-extensions']
 		}
 	}
 	,
@@ -97,7 +97,7 @@ exports.config = {
 		maxInstances : 20,
 		shardTestFiles : true,
 		chromeOptions: {
-			args: ['--no-sandbox']
+			args: ['--no-sandbox', '--disable-extensions']
 		}
 	},
 	
