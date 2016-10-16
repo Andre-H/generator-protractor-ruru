@@ -1,0 +1,30 @@
+{
+  "name": "protractor-e2e-gui-test-automation",
+  "version": "0.1.0",
+  "description": "Example project to show Protractor working with the basic features we chose to include.",
+  "scripts": {
+    "test": "test:e2e"
+  },
+  "author": "Andre-H",
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-cli": "0.1.13",
+    "grunt-contrib-jshint": "0.12.0",
+    "grunt-protractor-runner": "3.0.0",
+    "grunt-shell-spawn": "0.3.10",
+    "jasmine-reporters": "2.2.0",
+    "jasmine-spec-reporter": "2.4.0",
+    "mkdirp": "0.5.1",
+    "promise": "7.1.1",
+    "protractor": "3.2.1",
+    "protractor-linkuisref-locator": "1.1.2",
+    "q": "1.4.1",
+    "node-jasmine-file-contents-matcher": "^0.1.4",
+    "ruru-protractor-html-screenshot-reporter": "^0.0.4",
+    "ruru-protractor-junit-reporter": "^0.0.1",
+    "selenium-webdriver": "2.52.0",
+    "string": "3.3.1",
+    "webdriver-manager": "8.0.0",
+    "xml-writer": "1.6.0"
+  }
+}

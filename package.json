@@ -1,0 +1,33 @@
+{
+  "name": "generator-protractor-ruru",
+  "version": "0.0.1",
+  "description": "Generates a Protractor project with all the stuff we like and/or think is useful",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "files": [
+    "app"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andre-H/generator-protractor-ruru.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "yeoman",
+    "protractor",
+    "generator"
+  ],
+  "author": "Andre Hulse <andrebhulse@gmail.com> (http://github.com/Andre-H)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Andre-H/generator-protractor-ruru/issues"
+  },
+  "homepage": "https://github.com/Andre-H/generator-protractor-ruru#readme",
+  "dependencies": {
+    "html-wiring": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "yeoman-generator": "^0.24.1"
+  }
+}
