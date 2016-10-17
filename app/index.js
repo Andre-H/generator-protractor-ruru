@@ -55,7 +55,11 @@ module.exports = generators.Base.extend({
             this.template('package.json');
             this.copy('README.md');
             this.copy('Gruntfile.js');
-            this.copy('.gitignore');
+            //Avoid https://github.com/npm/npm/issues/1862 - npm renames .gitignore to .npmignore
+            this.copy(
+                '_gitignore',
+                '.gitignore'
+            );
         }
     },
 
