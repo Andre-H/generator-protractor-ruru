@@ -25,6 +25,8 @@ module.exports = generators.Base.extend({
 
     writing: {
         app: function() {
+            //Avoid https://github.com/npm/npm/issues/1862 - npm renames .gitignore to .npmignore
+            this.fs.move('_gitignore', '.gitignore');
             makeDir.mkdirp('tests/e2e/example/pageobjects');
             makeDir.mkdirp('tests/e2e/example/specs');
             makeDir.mkdirp('tests/e2e/helpers');
