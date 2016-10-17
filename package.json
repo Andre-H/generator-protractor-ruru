@@ -1,6 +1,6 @@
 {
   "name": "generator-protractor-ruru",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generates a Protractor project with all the stuff we like and/or think is useful",
   "main": "app/index.js",
   "scripts": {
