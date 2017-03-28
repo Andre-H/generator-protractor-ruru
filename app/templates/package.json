@@ -16,7 +16,7 @@
     "jasmine-spec-reporter": "2.4.0",
     "mkdirp": "0.5.1",
     "promise": "7.1.1",
-    "protractor": "3.2.1",
+    "protractor": "^4.0.14",
     "protractor-linkuisref-locator": "1.1.2",
     "q": "1.4.1",
     "node-jasmine-file-contents-matcher": "^0.1.4",
