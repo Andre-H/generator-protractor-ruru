@@ -25,28 +25,28 @@ module.exports = generators.Base.extend({
 
     writing: {
         app: function() {
-            makeDir.mkdirp('tests/e2e/example/pageobjects');
-            makeDir.mkdirp('tests/e2e/example/specs');
-            makeDir.mkdirp('tests/e2e/helpers');
+            makeDir.mkdirp('e2e/example/pageobjects');
+            makeDir.mkdirp('e2e/example/specs');
+            makeDir.mkdirp('e2e/helpers');
             makeDir.mkdirp('src/js');
         },
 
         projectfiles: function() {
             this.copy(
                 'conf.js',
-                'tests/e2e/conf.js'
+                'e2e/conf.js'
             );
             this.copy(
                 'example.spec.js',
-                'tests/e2e/example/specs/example.spec.js'
+                'e2e/example/specs/example.spec.js'
             );
             this.copy(
                 'example.page.js',
-                'tests/e2e/example/pageobjects/example.page.js'
+                'e2e/example/pageobjects/example.page.js'
             );
             this.copy(
                 'html-select.helper.js',
-                'tests/e2e/helpers/html-select.helper.js'
+                'e2e/helpers/html-select.helper.js'
             );
             this.copy(
                 'wait-plugin.js',
