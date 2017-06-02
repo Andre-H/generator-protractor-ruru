@@ -39,8 +39,12 @@ Optionally, pass parameter like in the example:
 $ grunt --baseUrl http://www.angularjs.org --suite myTestSuite --seleniumAddress http://199.99.99.100:4444/wd/hub
 ```
 
-Create test specs in tests/e2e/specs
+Check the examples in e2e/example/specs and e2e/example/pageobjects
 
-Create page objects in tests/e2e/pageobjects
+Create your test specs in e2e/specs
+
+Create your page objects in e2e/pageobjects
 
 And test away.
+
+Note: Chromedriver and Selenium standalone server versions are now fixed in the Gruntfile. If you need to update, you must change it in the Gruntfile.js

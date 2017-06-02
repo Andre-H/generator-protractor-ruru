@@ -4,7 +4,7 @@ var mkdirp = require('mkdirp');
 var SpecReporter = require('jasmine-spec-reporter');
 var jSonXMLReporter = require('ruru-protractor-junit-reporter');
 var HTMLScreenshotReporter = require('ruru-protractor-html-screenshot-reporter');
-var waitPlugin = require('../../src/js/wait-plugin.js');
+var waitPlugin = require('../src/js/wait-plugin.js');
 
 const targetDir = 'target';
 
@@ -40,7 +40,7 @@ exports.config = {
 
 	//Wait plugin makes sure Jasmine processes don't exit before all screen captures are taken
 	plugins : [{
-			path : '../../src/js/wait-plugin.js'
+			path : '../src/js/wait-plugin.js'
 		}
 	],
 

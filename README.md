@@ -9,7 +9,6 @@ HTML report and XML report that actually work with file sharding and multi-capab
 File contents matcher,
 More to be added.
 
-Installs Protractor version 3.2.1.
 
 ##Pre requisite
 
